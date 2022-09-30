@@ -1,0 +1,33 @@
+{
+    "name": "oxid-esales/smarty-admin-theme",
+    "description": "This is smarty version of Admin Theme for OXID eShop.",
+    "type": "oxideshop-theme",
+    "keywords": [
+        "oxid",
+        "themes",
+        "eShop"
+    ],
+    "homepage": "https://www.oxid-esales.com/en/home.html",
+    "license": [
+        "proprietary"
+    ],
+    "require": {
+        "php": ">=8.0",
+        "oxid-esales/smarty-component": "dev-b-7.0.x"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "oxideshop": {
+            "target-directory": "admin_smarty",
+            "assets-directory": "out/admin_smarty",
+            "blacklist-filter": [
+                ".gitattributes",
+                ".gitignore",
+                "CHANGELOG.md",
+                "composer.json",
+                "CONTRIBUTING.md",
+                "package.json"
+            ]
+        }
+    }
+}
