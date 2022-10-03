@@ -12,8 +12,7 @@
         "proprietary"
     ],
     "require": {
-        "php": ">=8.0",
-        "oxid-esales/smarty-component": "dev-b-7.0.x"
+        "php": ">=8.0"
     },
     "minimum-stability": "dev",
     "extra": {
