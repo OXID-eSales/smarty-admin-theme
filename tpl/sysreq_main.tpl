@@ -44,30 +44,5 @@
     <li class="null"> - [{oxmultilang ident="SYSREQ_DESCRIPTION_NULL"}]</li>
 </ul>
 
-[{assign var="_tplBlockErr" value=$oView->getMissingTemplateBlocks()}]
-[{if $_tplBlockErr|count}]
-    <ul class="req">
-        <h3>[{oxmultilang ident="SYSREQ_MODULE_BLOCKS_REQ"}]:</h3>
-        <table class="moduleBlockErrorsTable">
-            <thead>
-                <tr>
-                    <td>[{oxmultilang ident="SYSREQ_MODULE_BLOCKS_MODNAME"}]</td>
-                    <td>[{oxmultilang ident="SYSREQ_MODULE_BLOCKS_BLOCKNAME"}]</td>
-                    <td>[{oxmultilang ident="SYSREQ_MODULE_BLOCKS_TPLFILE"}]</td>
-                </tr>
-            </thead>
-            <tbody>
-                [{foreach from=$_tplBlockErr item="_err"}]
-                <tr>
-                    <td>[{$_err.module|escape}]</td>
-                    <td>[{$_err.block|escape}]</td>
-                    <td>[{$_err.template|escape}]</td>
-                </tr>
-                [{/foreach}]
-            </tbody>
-        </table>
-    </ul>
-[{/if}]
-
 [{include file="bottomnaviitem.tpl"}]
 [{include file="bottomitem.tpl"}]
