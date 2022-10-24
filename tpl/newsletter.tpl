@@ -20,7 +20,7 @@
             <td class="edittext"><br>
                 <input type="submit" class="edittext" name="export" id="newsletter_recipients"
                        value="[{oxmultilang ident="tbclnewsletter_recipients"}]"
-                       onClick="Javascript:document.export_recipients.fnc.value='export'"" [{$readonly}]>
+                       onClick="Javascript:document.export_recipients.fnc.value='export'" [{$readonly}]>
             </td>
         </tr>
     </table>
