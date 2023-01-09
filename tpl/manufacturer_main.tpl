@@ -94,6 +94,15 @@ window.onload = function ()
                 [{oxinputhelp ident="HELP_MANUFACTURER_MAIN_ICONUPLOAD"}]
                 </td>
             </tr>
+            <tr>
+                <td class="edittext">
+                    [{oxmultilang ident="GENERAL_SORT"}]
+                </td>
+                <td class="edittext">
+                <input type="text" class="editinput" size="25" maxlength="[{$edit->oxmanufacturers__oxtitle->fldmax_length}]" name="editval[oxmanufacturers__oxsort]" value="[{$edit->oxmanufacturers__oxsort->value}]" [{$readonly}]>
+                [{oxinputhelp ident="HELP_MANUFACTURER_SORT"}]
+                </td>
+            </tr>
         [{/block}]
 
         [{if $oxid != "-1"}]
