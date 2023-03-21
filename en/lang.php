@@ -1504,7 +1504,7 @@ $aLang = [
     'mxferoles'                => 'Shop Roles',
     /* tabs */
     'tbclorder_iPayment'       => 'IPayment',
-    'tbclnewsletter_recipients' => 'Export recipients',
+    'tbclnewsletter_recipients' => 'Export users',
     'tbcl_main'                => 'Main',
     'tbcladminlinks_mall'      => 'Mall',
     'tbcldelivery_mall'        => 'Mall',
