@@ -1,6 +1,6 @@
-# Smarty admin theme
+# Smarty Admin theme
 
-The admin theme for smarty engine
+Admin theme based on the Smarty engine.
 
 ## Compatibility
 
@@ -8,22 +8,30 @@ The admin theme for smarty engine
 
 ## Installation
 
-**Run the following command to install theme:**
+**Run the following command to install Smarty Admin theme:**
 
 ```bash
 composer require oxid-esales/smarty-admin-theme
 ```
 
+**Install OXID eSales Smarty Component:**
+
+Please install the corresponding version of the Smarty component:
+```bash
+composer require oxid-esales/smarty-component #for OXID eShop Community Edition
+composer require oxid-esales/smarty-component-pe # for OXID eShop Professional Edition
+composer require oxid-esales/smarty-component-ee # for OXID eShop Enterprise Edition
+```
+
 **Note:**
 
-The smarty theme for admin will be registered during the installation. If you are having some issues, that the wrong Admin
-theme is loaded, please check if the `oxid_esales.theme.admin.name` parameter is set correctly:
+The Smarty theme for Admin will be registered during the installation.
+Please check the following parameter's value in case the wrong Admin theme is loaded:
 
-.. code:: yaml
-
-    parameters:
-      oxid_esales.theme.admin.name: 'admin_smarty'
-
+```yaml
+parameters:
+  oxid_esales.theme.admin.name: 'admin_smarty'
+```
 
 ## License
 
